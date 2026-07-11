@@ -383,3 +383,206 @@ header{
     line-height:1.8;
 
 }
+/* =========================================
+   PREMIUM RESPONSIVE NAVBAR V2
+========================================= */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+.navbar{
+
+    width:92%;
+    max-width:1400px;
+
+    margin:20px auto;
+
+    padding:18px 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(15,23,42,.75);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.logo i{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+}
+
+.logo-text{
+
+    display:flex;
+    flex-direction:column;
+
+    line-height:1.1;
+
+}
+
+.logo-text span{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.logo-text small{
+
+    color:var(--secondary);
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.nav-menu a{
+
+    text-decoration:none;
+
+    color:var(--paragraph);
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.nav-menu a:hover{
+
+    color:white;
+
+}
+
+.nav-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media(max-width:992px){
+
+.nav-menu{
+
+display:none;
+
+}
+
+.nav-buttons{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.navbar{
+
+padding:18px 20px;
+
+}
+
+.logo-text span{
+
+font-size:22px;
+
+}
+
+}
+
+/* =====================
+   SMALL MOBILE
+===================== */
+
+@media(max-width:600px){
+
+.navbar{
+
+width:95%;
+
+padding:16px;
+
+}
+
+.logo i{
+
+font-size:28px;
+
+}
+
+.logo-text span{
+
+font-size:20px;
+
+}
+
+.logo-text small{
+
+font-size:12px;
+
+}
+
+}
