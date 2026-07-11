@@ -168,3 +168,169 @@ body{
     margin-bottom:25px;
 
 }
+/* ==========================
+   INPUT BOX
+========================== */
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:16px 18px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    background:#172033;
+    color:#fff;
+    font-size:16px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.input-box input::placeholder{
+    color:#94A3B8;
+}
+
+.input-box input:focus{
+    border:1px solid #3B82F6;
+    box-shadow:0 0 15px rgba(59,130,246,.35);
+}
+
+/* ==========================
+   PASSWORD ROW
+========================== */
+
+.password-box{
+    position:relative;
+}
+
+.toggle-password{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#94A3B8;
+}
+
+/* ==========================
+   OPTIONS
+========================== */
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#CBD5E1;
+}
+
+.options a{
+    color:#3B82F6;
+    text-decoration:none;
+}
+
+.options a:hover{
+    color:#22C55E;
+}
+
+/* ==========================
+   LOGIN BUTTON
+========================== */
+
+.login-btn{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:16px;
+    background:linear-gradient(90deg,#3B82F6,#06B6D4);
+    color:white;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 15px 35px rgba(59,130,246,.35);
+}
+
+/* ==========================
+   DIVIDER
+========================== */
+
+.divider{
+    text-align:center;
+    color:#94A3B8;
+    margin:25px 0;
+    position:relative;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:40%;
+    height:1px;
+    background:rgba(255,255,255,.1);
+}
+
+.divider::before{
+    left:0;
+}
+
+.divider::after{
+    right:0;
+}
+
+/* ==========================
+   GOOGLE BUTTON
+========================== */
+
+.google-btn{
+    width:100%;
+    padding:15px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+    background:#172033;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.google-btn:hover{
+    background:#1F2A44;
+}
+
+/* ==========================
+   SIGNUP LINK
+========================== */
+
+.signup-text{
+    text-align:center;
+    color:#94A3B8;
+}
+
+.signup-text a{
+    color:#06B6D4;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.signup-text a:hover{
+    color:#22C55E;
+}
+
+
